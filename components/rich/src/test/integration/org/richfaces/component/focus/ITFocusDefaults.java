@@ -17,6 +17,7 @@ import org.jboss.arquillian.warp.jsf.AfterPhase;
 import org.jboss.arquillian.warp.jsf.Phase;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
@@ -31,6 +32,7 @@ import category.Smoke;
 @WarpTest
 @RunWith(Arquillian.class)
 @Category(Smoke.class)
+@Ignore("Warp doesn't work with new Arquillian Core/Drone/Graphene")
 public class ITFocusDefaults {
 
     @Drone
