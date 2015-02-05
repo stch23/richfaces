@@ -27,6 +27,7 @@ import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.warp.WarpTest;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
@@ -38,6 +39,7 @@ import category.Smoke;
 @RunWith(Arquillian.class)
 @WarpTest
 @Category(Smoke.class)
+@Ignore("Warp doesn't work with new Arquillian Core/Drone/Graphene")
 public class ITRegionRichAjax extends AbstractRegionTest {
 
     @Deployment
