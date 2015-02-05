@@ -44,6 +44,7 @@ import org.jboss.arquillian.warp.Warp;
 import org.jboss.arquillian.warp.WarpTest;
 import org.jboss.arquillian.warp.jsf.BeforePhase;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.experimental.categories.Category;
 import org.junit.runner.RunWith;
@@ -88,6 +89,7 @@ public class ITJavaScriptServiceAjax {
         return deployment.getFinalArchive();
     }
 
+    @Ignore("Warp doesn't work with new Arquillian Core/Drone/Graphene")
     @Test
     public void jsf_ajax_should_trigger_script_added_by_JavaScriptService() {
         driver.navigate().to(contextPath);
@@ -101,6 +103,7 @@ public class ITJavaScriptServiceAjax {
             equalTo("ajaxbeforedomupdate javascriptServiceInProgress javascriptServiceComplete ajaxcomplete"));
     }
 
+    @Ignore("Warp doesn't work with new Arquillian Core/Drone/Graphene")
     @Test
     public void richfaces_ajax_should_trigger_script_added_by_JavaScriptService() {
         driver.navigate().to(contextPath);
