@@ -290,11 +290,6 @@
             </dependency>
             <dependency>
                 <groupId>org.jboss.arquillian.extension</groupId>
-                <artifactId>arquillian-phantom-driver</artifactId>
-                <version>${version.arquillian.phantom.driver}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jboss.arquillian.extension</groupId>
                 <artifactId>arquillian-drone-bom</artifactId>
                 <version>${version.arquillian.drone}</version>
                 <type>pom</type>
