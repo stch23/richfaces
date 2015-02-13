@@ -109,6 +109,8 @@
 
         <property name="chromeDriverBinary">/opt/google/chrome/chromedriver</property>
         <property name="phantomjs.binary.path">target/phantomjs</property>
+        
+        <property name="dimensions">1280×1024</property>
 
     </extension>
 
