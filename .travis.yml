@@ -2,10 +2,12 @@ language: java
 
 env:
   global:
-    - MAVEN_OPTS="-Xmx512m"
+    - MAVEN_OPTS="-Xmx1024m -Xms256m"
 
 jdk: 
   - oraclejdk8
+  - oraclejdk7
+  - openjdk7
 
 install: mvn clean install -B -DskipTests=true -s /home/travis/build/richfaces/richfaces/buildhive-settings.xml
 
